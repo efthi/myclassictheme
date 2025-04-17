@@ -1,2 +1,2 @@
 # myclassictheme
-My Classic Theme Development 2025, Another Paraller Devlopment for fast coding.
+My Classic Theme Development 2025, Another Paraller Development for fast coding.
