@@ -6,7 +6,8 @@ add_theme_support('title-tag');
 
 //Theme StyleSheet
 function myClassictheme_style(){
-	wp_enqueue_style('myClassic_bootstrap', get_template_directory_uri().'/dist/css/bootstrap/bootstrap.min.css', array(), '5.3.5');
+	wp_register_style('bootstrap', get_template_directory_uri().'/dist/css/bootstrap/bootstrap.min.css', array(), '5.3.5', 'all');
+	wp_enqueue_style('bootstrap');
 	wp_enqueue_style('myClassic_style', get_stylesheet_uri(), array(), '1.0.0');
 }
 
