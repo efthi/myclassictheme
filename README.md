@@ -9,8 +9,8 @@ A custom-built classic WordPress theme — built from scratch for learning and c
 
 ## 📦 Files and Structure
 
-myclassictheme/ 
-│ 
+myclassictheme/    
+│      
 ├── index.php # Main template file     
 ├── header.php # Header section     
 ├── footer.php # Footer section   
