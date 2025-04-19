@@ -9,16 +9,7 @@ A custom-built classic WordPress theme — built from scratch for learning and c
 
 ## 📦 Files and Structure
 
-myclassictheme/ 
-│ 
-├── index.php # Main template file 
-├── header.php # Header section 
-├── footer.php # Footer section 
-├── functions.php # Enqueues styles and scripts 
-├── style.css # Theme meta info + styling 
-├── front-page.php # (Optional) For static homepage 
-├── README.md # You're reading it! 
-└── dist/ # Assets (JS/CSS)
+myclassictheme/ │ ├── index.php # Main template file ├── header.php # Header section ├── footer.php # Footer section ├── functions.php # Enqueues styles and scripts ├── style.css # Theme meta info + styling ├── front-page.php # (Optional) For static homepage ├── README.md # You're reading it! └── dist/ # Assets (JS/CSS)
 
 
 ---
