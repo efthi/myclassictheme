@@ -1,6 +1,5 @@
 <?php get_header();?>
 
-<body <?php body_class(); ?>>
 
   <h1><?php bloginfo('name'); ?></h1>
   <p><?php bloginfo('description'); ?></p>
