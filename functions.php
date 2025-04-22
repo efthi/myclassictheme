@@ -17,11 +17,34 @@ add_action('wp_enqueue_scripts', 'myClassictheme_style');
 
 //Javascript Files
 function myClassictheme_scripts(){
-	wp_enqueue_script('bootstrap.bundle.min', get_template_directory_uri().'/dist/css/bootstrap/bootstrap.min.css', array(), '5.3.5', 'false');
+	wp_enqueue_script('bootstrap.bundle.min', get_template_directory_uri().'/dist/js/bootstrap/bootstrap.bundle.min.js', array(), '5.3.5', 'false');
 	
 }
 
 add_action('wp_enqueue_scripts', 'myClassictheme_scripts');
+
+
+//Custom logo change function
+function myClassictheme_customizer_register($wp_customize){
+	$wp_customize->add_action('myClassictheme_header_area', 
+	array(
+	'title'=> __('Header Area', 'myclassictheme'),
+	'description'=> 'If you interested to update your headers area, you can do it here',));
+	
+	$wp_customize->add_setting('myClassictheme_logo', 
+	array(
+	'default'=>get_bloginfo('template_directory').'assets/img/logo.png',));
+	
+	$wp_customize-> add_control( new WP_Customize_Image_Control( $wp_customize, 'myClassictheme_logo',
+	array(
+		'label'=>'Logo Upload',
+		'setting'=>'myClassictheme_logo',
+		'section'=>'myClassictheme_header_area',
+				
+	)));
+}
+
+add_action('customize_register', 'myClassictheme_customizer_register');
 
 ?>
 
