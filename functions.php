@@ -26,7 +26,7 @@ add_action('wp_enqueue_scripts', 'myClassictheme_scripts');
 
 //Custom logo change function
 function myClassictheme_customizer_register($wp_customize){
-	$wp_customize->add_action('myClassictheme_header_area', 
+	$wp_customize->add_section('myClassictheme_header_area', 
 	array(
 	'title'=> __('Header Area', 'myclassictheme'),
 	'description'=> 'If you interested to update your headers area, you can do it here',));
@@ -41,7 +41,7 @@ function myClassictheme_customizer_register($wp_customize){
 		'setting'=>'myClassictheme_logo',
 		'section'=>'myClassictheme_header_area',
 				
-	)));
+	))); 
 }
 
 add_action('customize_register', 'myClassictheme_customizer_register');
