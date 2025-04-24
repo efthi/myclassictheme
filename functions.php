@@ -46,7 +46,17 @@ function myClassictheme_customlogo_register($wp_customize){
 
 add_action('customize_register', 'myClassictheme_customlogo_register');
 
-//Menu Register
+
+
+/**
+ * Register Custom Navigation Walker
+ */
+function register_navwalker(){
+	require_once get_template_directory() . '/dist/wp-bootstrap-navwalker/class-wp-bootstrap-navwalker.php';
+}
+add_action( 'after_setup_theme', 'register_navwalker' );
+
+//Nav Menu Register
 register_nav_menu('main_menu', __('Main Menu', 'myclassictheme'));
 
 
