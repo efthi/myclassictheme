@@ -25,7 +25,7 @@ add_action('wp_enqueue_scripts', 'myClassictheme_scripts');
 
 
 //Custom logo change function
-function myClassictheme_customizer_register($wp_customize){
+function myClassictheme_customlogo_register($wp_customize){
 	$wp_customize->add_section('myClassictheme_header_area', 
 	array(
 	'title'=> __('Header Area', 'myclassictheme'),
@@ -44,7 +44,15 @@ function myClassictheme_customizer_register($wp_customize){
 	))); 
 }
 
-add_action('customize_register', 'myClassictheme_customizer_register');
+add_action('customize_register', 'myClassictheme_customlogo_register');
+
+//Menu Register
+register_nav_menu('main_menu', __('Main Menu', 'myclassictheme'));
+
+
+
+
+
 
 ?>
 
