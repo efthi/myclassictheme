@@ -1,8 +1,6 @@
-  <footer>
-    <?php echo body_class();?>
-    <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
-    <p>Powered by WordPress</p>
-  </footer>
+  <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
+     <p class="mb-0">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
+   </footer>
   <?php wp_footer(); ?>
 </body>
 </html>

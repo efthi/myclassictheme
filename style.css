@@ -13,6 +13,7 @@ Text Domain: myclassictheme
 body {
     background-color: ;
     font-family: Arial, sans-serif;
+	margin: auto;
 }
 
 .home {

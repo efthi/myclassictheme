@@ -42,6 +42,31 @@ function myClassictheme_customlogo_register($wp_customize){
 		'section'=>'myClassictheme_header_area',
 				
 	))); 
+
+	//Menu Position Option
+	$wp_customize->add_section('myclassictheme_menu_option', array( 
+	'title' => __('Menu Position Option', 'myclassictheme'),
+	'description' => 'If you interested to change menu position you can do it',
+	));
+
+	$wp_customize->add_setting('myclassictheme_menu_position', array(
+	'default' => 'right_menu',
+	));
+
+	$wp_customize-> add_control('myclassictheme_menu_position', array(
+	'label' => 'Menu Position',
+	'description' => 'Select your menu position',
+	'setting' => 'myclassictheme_menu_position',
+	'section' => 'myclassictheme_menu_option',
+	'type' => 'radio',
+	'choices' => array(
+	'left_menu' => 'Left Menu',
+	'center_menu' => 'Center Menu',
+	'right_menu' => 'Right Menu',
+	)
+	));
+
+
 }
 
 add_action('customize_register', 'myClassictheme_customlogo_register');
@@ -58,10 +83,6 @@ add_action( 'after_setup_theme', 'register_navwalker' );
 
 //Nav Menu Register
 register_nav_menu('main_menu', __('Main Menu', 'myclassictheme'));
-
-
-
-
 
 
 ?>

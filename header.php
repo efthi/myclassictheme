@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> class="no-js">
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +9,14 @@
 <body <?php body_class(); ?>>
   <header>
   <div id="header_area">
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-3">
 				<a href=""><img class='logo' src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="logo.png" /></a>
 			</div>
 			<div class="col-md-9">
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-			  <div class="container">
+			  <div class="container-fluid">
 				<a class="navbar-brand" href="#">MyLogo</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
 				  <span class="navbar-toggler-icon"></span>
